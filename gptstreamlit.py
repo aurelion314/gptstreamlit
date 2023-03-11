@@ -1,7 +1,7 @@
 import streamlit as st
 import os, openai
 
-openai.api_key ="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"
+openai.api_key = st.secrets["openai_key"]
 
 system_msg_default = {'role': 'system', 'content': 'You are GPT, a helpful assistant to a dental receptionist.'}
 system_msg_rewrite = {'role': 'system', 'content': 'You are GPT, a helpful assistant to a dental receptionist. You are simply rewriting a draft message for a patient.'}
